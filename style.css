@@ -1,0 +1,126 @@
+*{
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    nav ul{
+        display: flex;
+        list-style-type: none;
+        height: 75px;
+        background-color: black;
+        color: white; 
+        align-items: center;
+    }
+    nav ul img{
+        width: 40px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        align-items: center;
+        color: white;
+    }
+    nav ul li a:hover{
+        font-size: larger;
+    }
+    nav ul li{
+        display: flex;
+        list-style: none;
+        padding: 10px 30px;
+        align-items: center;
+        text-align: center;
+    }
+    .contain{
+        background-color: antiquewhite;
+        padding: 20px;
+    }
+    .container{
+        background-color: rgb(4, 4, 4);
+        min-height: 35vw;
+        margin: 23px auto;
+        width: 75%;
+        padding: 34px;
+    }
+    .bottom{
+        position: sticky;
+        align-content: center;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        height: 100px;
+        justify-content: center;
+        display: flex;
+        bottom: 0;
+    }
+    .icons{
+        font-size: 28px;
+        position: relative;
+        padding: 40px;
+    }
+    #progressbar{
+       position: absolute;
+        padding: 15px;
+        width: 500px;
+    }
+    .icons i{
+        padding: 0px 10px;
+    }
+    .songitem{
+        height: 90px;
+         width: 370px;
+        display: flex;
+         justify-content: space-between;
+         margin: 12px 0px;
+         align-items: center;
+         border-radius: 20px;
+         padding: 10px;
+         background-color: aquamarine;
+         margin: 50px;
+         
+    }
+    .songitem img{
+        width:  100px;
+         height:  90px;
+         border-radius: 100px;
+    }
+    .songitem span{
+        /* position: relative; */
+        display: flex;
+        color: rgb(0, 0, 0);
+        justify-content: center;
+        align-items: center;
+
+    }
+    .timestamp{
+        /* position: relative; */
+        padding: 20px 0px;
+        margin: 0px 25px;
+    }
+    .songlist{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .heading{
+        text-align: center;
+        background-color: antiquewhite;
+        padding: 20px;
+    }
+    @media screen and (min-width:100px) and (max-width:900px){
+        .songlist{
+            display: grid;
+            grid-template-columns: auto;
+        }
+        .container{
+            margin: 0px;
+        }
+        .bottom{
+            width: 80%;
+        }
+        .heading {
+            max-width: 615px;
+            padding: 0px;
+            margin: 0px;
+            width: fit-content;
+        }
+        nav{
+            max-width: 615px;
+        }
+    }
